@@ -62,7 +62,7 @@
 }
 
 .wrapper .container__main {
-  max-width: 1400px;
+  max-width: 1000px;
   max-height: 850px;
   display: flex;
   margin: auto;
@@ -73,22 +73,22 @@
   padding: 30px 10px;
 }
 .wrapper .container__main .container__Course {
-  width: 1200px;
+  /* width: 900px; */
   display: flex;
   flex-direction: column;
 }
 .wrapper .container__main .left {
-  width: 74%;
+  width: 100%;
   overflow-y: auto;
 }
-.wrapper .container__main .right {
+/* .wrapper .container__main .right {
   width: 25%;
   padding: 10px;
   box-sizing: border-box;
   border-radius: 20px;
   background: #fff;
-}
-.wrapper .container__main .right h3 {
+} */
+/* .wrapper .container__main .right h3 {
   text-align: center;
   margin: 20px 0;
 }
@@ -106,8 +106,8 @@
   height: auto;
   display: block;
   margin-bottom: 10px;
-}
-.wrapper .container__main .right .list__video a p {
+} */
+/* .wrapper .container__main .right .list__video a p {
   color: #5600f5;
   font-size: 16px;
   font-weight: bold;
@@ -115,7 +115,7 @@
 .wrapper .container__main .right .list__video a span {
   color: #a4a5ad;
   font-size: 16px;
-}
+} */
 
 .container__cards {
   padding: 10px 15px;
@@ -176,9 +176,9 @@
     width: 100% !important;
   }
 
-  .right {
+  /* .right {
     display: none !important;
-  }
+  } */
 }
 
 /*# sourceMappingURL=style.css.map */

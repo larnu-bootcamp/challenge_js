@@ -197,7 +197,7 @@ const course = [
 ];
 
 let cardsContainer = document.querySelector(".container__cards");
-let info = document.querySelector(".list__video");
+// let info = document.querySelector(".list__video");
 
 for (i = 0; i < course.length; i++) {
   console.log(course[i].title);
@@ -208,7 +208,8 @@ for (i = 0; i < course.length; i++) {
   <span>${course[i].date}</span></div>
   </div>
   </div>
-  `,info.innerHTML += `<a href="#${course[i].date}" >
-  <p>${course[i].title}</p>
-  <span>${course[i].date}</span>`;
+  `
+  //   info.innerHTML += `<a href="#${course[i].date}" >
+  // <p>${course[i].title}</p>
+  // <span>${course[i].date}</span>`;
 }
