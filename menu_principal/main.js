@@ -1,7 +1,12 @@
-const dateTime = document.querySelector(".container--profile--info--time--date")
+const dateTime = document.querySelector('.container-profile__info__time-date');
+const userName = document.querySelector('.container-profile__info__name');
 
-const date = new Date();
+userName.innerHTML += ' ' + 'John Doe';
 
-console.log(date.toLocaleDateString() + ' ' + date.toLocaleTimeString())
+setInterval(clock, 1000);
 
-dateTime.innerHTML = date.toLocaleDateString() + ' ' + date.toLocaleTimeString()
+function clock() {
+  const date = new Date();
+  dateTime.innerHTML =
+    date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
+}
