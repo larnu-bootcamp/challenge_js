@@ -182,3 +182,15 @@
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.filter {
+  display: block;
+  padding:15px 20px;
+  font-size: 18px;
+  margin: auto;
+  max-width: 250px;
+  width: 100%;
+  border-radius: 25px;
+  border: none;
+  outline: 0;
+}

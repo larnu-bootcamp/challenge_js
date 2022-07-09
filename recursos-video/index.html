@@ -51,11 +51,10 @@
               <option value="value2">Curso de css</option>
               <option value="value3">Curso de js</option>
             </select> -->
-            <input type="text" placeholder="Buscar" style="padding:15px 20px; font-size: 18px;
-            border-radius:25px; border:none; margin: auto; display: block; max-width: 250px; width: 100%;">
+            <input type="text"  name="" id="filter" class="filter" placeholder="Buscar" onkeyup="searchResource()">
           </div>
           
-          <div class="container__cards"></div>
+          <div class="container__cards" id="container__cards"></div>
         </div>
         <!-- <div class="container__Course right">
           <h3>Selecciona una fecha</h3>
