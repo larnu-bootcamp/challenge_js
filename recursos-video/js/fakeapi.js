@@ -87,3 +87,25 @@ for (i = 0; i < course.length; i++) {
   </div>
   `;
 }
+
+/* Search  Resources */
+
+function searchResource() {
+  const input = document.getElementById('filter').value.toUpperCase();
+  const cardContainer = document.getElementById('container__cards');
+  console.log(cardContainer);
+
+  const cards = cardContainer.getElementsByClassName('card__item');
+  console.log(cards);
+
+  for (let i = 0; i < cards.length; i++) {
+    const title = cards[i].querySelector('.card__text-container h2');
+    console.log(title);
+
+    if (title.innerText.toUpperCase().indexOf(input) > -1) {
+      cards[i].style.display = '';
+    } else {
+      cards[i].style.display = 'none';
+    }
+  }
+}
