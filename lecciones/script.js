@@ -25,7 +25,7 @@ document.getElementById("go").onclick = function() {
 };
 
 document.getElementById("study").onclick = function() {
-  var audio = document.getElementById("audio-study");
+  let audio = document.getElementById("audio-study");
   if (audio.paused) audio.play();
   else audio.pause();
 };
@@ -54,5 +54,47 @@ function blurring() {
 const scale = (num, in_min, in_max, out_min, out_max) => {
   return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
 };
+
+// videos leccions
+let objone = {"video": {
+  "value": '<iframe width="560" height="315" src="https://www.youtube.com/embed/K7xJLpDkKDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+}}
+
+$(".video-responsive-one").html(objone.video.value);
+
+
+let objtwo = {"video": {
+  "value": '<iframe width="560" height="315" src="https://www.youtube.com/embed/CrwXFUMjV3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+}}
+
+$(".video-responsive-two").html(objtwo.video.value); 
+
+
+let objthree = {"video": {   
+  "value": '<iframe width="560" height="315" src="https://www.youtube.com/embed/9Bvkfgvni-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+}}
+
+$(".video-responsive-three").html(objthree.video.value); 
+
+
+let objfour = {"video": {
+  "value": '<iframe width="560" height="315" src="https://www.youtube.com/embed/qvORFiU1-IA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+}}
+
+$(".video-responsive-four").html(objfour.video.value); 
+
+
+let objfive = {"video": {
+  "value": '<iframe width="560" height="315" src="https://www.youtube.com/embed/jxw7D9fVadI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+}}
+
+$(".video-responsive-five").html(objfive.video.value); 
+
+
+let objsix = {"video": {
+  "value": '<iframe width="560" height="315" src="https://www.youtube.com/embed/FftB9qJkoFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+}}
+
+$(".video-responsive-six").html(objsix.video.value); 
 
 

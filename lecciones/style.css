@@ -19,13 +19,12 @@ body {
 
 .loading-text {
   font-size: 70px;
-  font-weight: 900;
-  color: #081933;
-  height: 100vh;
+  font-weight: bolder;
+  color: #fff;
   position: absolute;
-  z-index: 3;
   left: 45%;
-  top: 65%;
+  top: 35%;
+  z-index: 4;
 }
 
 /* Search */
@@ -101,16 +100,27 @@ body {
   height: 180px;
   margin: 8px;
   width: 24%;
-  background: #a065ff;
+  background: #1f2f47;
 }
-.video-responsive {
+
+.video-responsive-one,
+.video-responsive-two,
+.video-responsive-three,
+.video-responsive-four,
+.video-responsive-five,
+.video-responsive-six {
   overflow: hidden;
   padding-bottom: 200px; /* Adecua este valor para controlar la altura del video */
   position: relative;
   height: 0;
   border-radius: 20px;
 }
-.video-responsive iframe {
+.video-responsive-one iframe,
+.video-responsive-two iframe,
+.video-responsive-three iframe,
+.video-responsive-four iframe,
+.video-responsive-five iframe,
+.video-responsive-six iframe {
   left: 0;
   top: 0;
   height: 100%;
