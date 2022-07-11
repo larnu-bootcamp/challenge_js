@@ -21,52 +21,6 @@ let course = [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6];
 console.log(`cour: ${course}`);
 console.log('cour.lesson1.date: ', course[0].date);
 
-/*
-const course = [
-  {
-    date: "29/06/2022",
-    categoria: "js",
-    title: "Explicación proyecto final HTML & CSS",
-    video: `<iframe width="100%" height="315" src="https://www.youtube.com/embed/t2QcDbVM8E8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
-  },
-  {
-    date: "29/06/2022",
-    categoria: "html",
-    title: "Repaso git y resumen HTML & CSS",
-    video: `<iframe width="100%" height="315" src="https://www.youtube.com/embed/DcN7MpJpbgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
-  },
-
-  {
-    date: "28/06/2022",
-    categoria: "css",
-    title: "Navigation Bar HTML",
-    video: `<iframe width="100%" height="315" src="https://www.youtube.com/embed/hBB0ZyEqJk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
-  },
-  {
-    date: "28/06/2022",
-    categoria: "css",
-    title: "Preprocesador CSS",
-    video: `<iframe width="100%" height="315" src="https://www.youtube.com/embed/A60uWXv2Q-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
-  },
-
-  {
-    date: "27/06/2022",
-    categoria: "html",
-    title: "Live-code Session",
-    video: `<iframe width="100%" height="315" src="https://www.youtube.com/embed/XZ37KcVzm7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
-  },
-  {
-    date: "27/06/2022",
-    categoria: "js",
-    title: "Introducción a git, github & gitflow",
-    video: `<iframe width="100%" height="315" src="https://www.youtube.com/embed/-iIKo9XmnVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
-  },
-];
-
-console.log("course:", course);
-console.log("course.date: ", course[1].date);
-*/
-
 let cardsContainer = document.querySelector(".container__cards");
 let selectItem = document.querySelector(".select__item");
 
