@@ -35,6 +35,8 @@ password.placeholder = "Contraseña";
 password.setAttribute("type", "password");
 password.setAttribute("required", "");
 
+button.setAttribute("href", "#");
+
 // Insertando input de email y password al form
 
 form.appendChild(email);
