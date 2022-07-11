@@ -1,13 +1,16 @@
 // Variables
+
 var box = document.createElement("div");
 var form = document.createElement("form");
 var email = document.createElement("input");
 var password = document.createElement("input");
 var button = document.createElement("button");
+var btn = document.createElement("button");
 var paragraph = document.createElement("p");
 var text = document.createTextNode("Entrar");
+var text2 = document.createTextNode("Registrar");
 var body = document.getElementsByTagName("body");
-
+var correo = '' ;
 
 //Añadiendolos para poder modificar en css
 
@@ -18,6 +21,8 @@ email.classList.add('email');
 password.classList.add('password');
 
 button.classList.add('button');
+
+btn.classList.add('button');
 
 paragraph.classList.add('paragraph');
 
@@ -36,6 +41,7 @@ password.setAttribute("type", "password");
 password.setAttribute("required", "");
 
 button.setAttribute("href", "#");
+btn.setAttribute("href", "#");
 
 // Insertando input de email y password al form
 
@@ -48,8 +54,25 @@ paragraph.appendChild(text);
 
 button.appendChild(paragraph);
 
+btn.appendChild(text2);
+
 // Insertando button dentro del form
+
 form.appendChild(button);
 
+//-- EventListener ---
+
+button.addEventListener("click", getData);
+
+function getData() {
+
+  console.log(email.value);
+  correo = email.value;
+ 
+}
+
 // Insertando el form dentro del box
+
 box.appendChild(form);
+
+box.appendChild(btn);
