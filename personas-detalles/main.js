@@ -113,3 +113,4 @@ fetch("https://randomuser.me/api/")
       picture: large || medium || thumbnail || "",
     });
   });
+//Grupo Estuardo, Cesar, Roberto
