@@ -105,7 +105,6 @@ fetch("https://randomuser.me/api/")
     const { first, last } = payload.name;
 
     let { email } = payload;
-    email = email.slice(0, -4);
     const { large, medium, thumbnail } = payload.picture;
 
     createUser({
