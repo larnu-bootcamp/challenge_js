@@ -50,8 +50,6 @@ selectItem.addEventListener("change", (e) => {
     console.log(course[i].categoria);
 
     if (selected == course[i].categoria) {
-      // let card = document.createElement(banana,[div]);
-      // cardsContainer.appendChild(card);
       cardsContainer.innerHTML += `<div class="card__item" id="${course[i].date}">
     ${course[i].video}
     <div class="card__text-container">
@@ -75,9 +73,6 @@ selectItem.addEventListener("change", (e) => {
 });
 
 for (i = 0; i < course.length; i++) {
-  // console.log(course[i].categoria);
-  // let card = document.createElement(banana,[div]);
-  // cardsContainer.appendChild(card);
   cardsContainer.innerHTML += `<div class="card__item" id="${course[i].date}">
   ${course[i].video}
   <div class="card__text-container">
@@ -89,7 +84,6 @@ for (i = 0; i < course.length; i++) {
 }
 
 /* Search  Resources */
-
 function searchResource() {
   const input = document.getElementById('filter').value.toUpperCase();
   const cardContainer = document.getElementById('container__cards');
