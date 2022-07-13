@@ -5,7 +5,6 @@ var form = document.createElement("form");
 var email = document.createElement("input");
 var password = document.createElement("input");
 var button = document.createElement("button");
-var btn = document.createElement("button");
 var paragraph = document.createElement("p");
 var text = document.createTextNode("Entrar");
 var text2 = document.createTextNode("Registrar");
@@ -21,8 +20,6 @@ email.classList.add('email');
 password.classList.add('password');
 
 button.classList.add('button');
-
-btn.classList.add('button');
 
 paragraph.classList.add('paragraph');
 
@@ -40,8 +37,7 @@ password.placeholder = "Contraseña";
 password.setAttribute("type", "password");
 password.setAttribute("required", "");
 
-button.setAttribute("href", "#");
-btn.setAttribute("href", "#");
+button.setAttribute("href" , "menu_principal/index.html");
 
 // Insertando input de email y password al form
 
@@ -53,12 +49,12 @@ form.appendChild(password);
 paragraph.appendChild(text);
 
 button.appendChild(paragraph);
-
-btn.appendChild(text2);
+button.setAttribute("type", "submit");
 
 // Insertando button dentro del form
 
 form.appendChild(button);
+form.setAttribute("action", "../menu_principal/index.html");
 
 //-- EventListener ---
 
