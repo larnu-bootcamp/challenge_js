@@ -3,9 +3,13 @@ const email = document.getElementById("email");
 const contrasenia = document.getElementById("contrasenia");
 const form = document.getElementById("form");
 const parrafo = document.getElementById("alerta");
+const iniciarSesion = document.getElementById("contenedor__boton");
+const registrase = document.getElementById("form__button");
+let a = document.createElement('a')
+let enlaceInicioSesion= document.createTextNode
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault()
+  e.preventDefault();
   let alerta = "";
   let entrar = false;
   let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -27,4 +31,18 @@ form.addEventListener("submit", (e) => {
   } else {
     parrafo.innerHTML = "Registro Exitoso";
   }
+  
+  registrase.addEventListener('click', (e)=>{
+    e.preventDefault
+    window.location.href='./menu_principal/index.html'
+  })
 });
+
+
+iniciarSesion.addEventListener('click', (e)=>{
+  e.preventDefault
+  window.location.href='./login/index.html'
+})
+
+
+
