@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  font-family: "Raleway", sans-serif;
 }
 
 *:focus {
@@ -13,6 +14,10 @@
 
 body {
   min-height: 100vh;
+  background-image: url(/images/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
@@ -90,6 +95,14 @@ main {
   justify-content: center;
   align-items: center;
   border-radius: 35px;
+  font-style: normal;
+  font-size: 1.5rem;
+  box-shadow: 5px 5px 10px #919191;
+  transition: 0.3s all ease-in-out;
+}
+
+.container-section--button:hover {
+  margin-top: -15px;
 }
 
 @media screen and (max-width: 410px) {
