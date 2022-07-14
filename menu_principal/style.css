@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  font-family: 'Raleway', sans-serif;
 }
 
 *:focus {
@@ -19,6 +20,11 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 10px 10px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  font-weight: bold;
 }
 
 main {
@@ -28,6 +34,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  background: #f5f5f5;
 }
 
 .container-logo {
@@ -36,6 +43,12 @@ main {
   flex-direction: row;
   align-items: center;
   gap: 5px;
+}
+
+.container-logo__image {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
 }
 
 .container-profile {
@@ -77,8 +90,9 @@ main {
 }
 
 .container-section--button {
-  background-color: blue;
-  color: aliceblue;
+  background: white;
+  width: 100%;
+  color: black;
   width: 100%;
   max-width: 300px;
   height: 200px;
@@ -90,6 +104,32 @@ main {
   justify-content: center;
   align-items: center;
   border-radius: 35px;
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 5px 5px 10px #919191;
+  text-decoration: none;
+}
+
+.container-section--button:hover {
+  animation: blur-out-expand 0.4s linear both;
+}
+
+@keyframes blur-out-expand {
+  0% {
+    transform: scale(1);
+    filter: blur(0.01px);
+  }
+  50% {
+    transform: scale(2);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0.01px);
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 410px) {
@@ -97,7 +137,7 @@ main {
     width: 70px;
   }
   .container-logo__image {
-    width: 40px;
+    width: 120px;
   }
 
   .container-profile__image img {
