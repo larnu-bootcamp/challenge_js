@@ -7,7 +7,8 @@
 .main__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: left;
+  gap: 30px;
 }
   
 .card {
@@ -18,8 +19,14 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  border: 1px solid lightgrey;
   border-radius: 8px;
   box-shadow: 5px 5px 10px #919191;
+  transition: 0.3s all ease-in-out;
+}
+
+.card:hover {
+  margin-top: -15px;
 }
 
 .card__userdata {
