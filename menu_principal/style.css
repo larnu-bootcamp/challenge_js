@@ -92,13 +92,14 @@ main {
 .container-section--button {
   background: white;
   width: 100%;
-  color: black;
+  color: #6300e0;
   width: 100%;
   max-width: 300px;
   height: 200px;
   max-height: 200px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 24px;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
