@@ -23,11 +23,13 @@
       <div class="container__nav">
         <nav class="container__nav--nav">
           <header>
-            <img
-              class="nav__logo"
-              src="./img/larnu_logo.png"
-              alt="Logo LarnU"
-            />
+            <a href="../index.html">
+              <img
+                class="nav__logo"
+                src="./img/larnu_logo.png"
+                alt="Logo LarnU"
+              />
+            </a>
           </header>
           <ul>
             <li>
@@ -45,9 +47,16 @@
       <main class="container__main">
         <div class="container__Course left">
           <div class="container__filter">
-            <input type="text"  name="" id="filter" class="filter" placeholder="Buscar" onkeyup="searchResource()">
+            <input
+              type="text"
+              name=""
+              id="filter"
+              class="filter"
+              placeholder="Buscar"
+              onkeyup="searchResource()"
+            />
           </div>
-          
+
           <div class="container__cards" id="container__cards"></div>
         </div>
       </main>
