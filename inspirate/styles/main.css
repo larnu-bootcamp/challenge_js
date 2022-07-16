@@ -37,11 +37,11 @@ a {
 .container_cartas {
     /* height: 64.6%; /* golden ratio con superior */
     height: auto;
-    padding: 4% 16% 0% 16%;
+    padding: 4% 12% 0% 12%;
     background-color: orange;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* tarjetas de 150px de ancho */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* tarjetas de 150px de ancho */
     gap: 3rem;
 }
 

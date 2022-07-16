@@ -1,4 +1,5 @@
 // data es un arreglo del archivo data.js el cual es incorporado en el codigo html previo a este
+console.log(data);
 
 // Tarjetas para Links Externos
 // permite crear html
@@ -27,10 +28,16 @@ class LinkTarjeta {
 
 var tarjeta = new LinkTarjeta("logo.png","logo.png","titulo","lorem ipsum dolor sit amet, consectetur adipiscing elit")
 
+// camtodad de datos
+largo_data = data.length
+
 // Loop para crear varias tarjetas a partir de Data
 let div_padre = document.getElementById("div_padre");
-for (i=1; i <= 8; i++) {
-    var child = document.createElement("div")    
+for (i=1; i <= largo_data; i++) {
+    var child = document.createElement("div");
+    //toma un dato del arreglo data y extrae la informacion para crear el html de una carta
+    var dato = data[i];
+    var tarjeta = new LinkTarjeta( dato.link, dato.img, dato.titulo, dato.texto)
     child.innerHTML = tarjeta.generarHtml()
 
     div_padre.appendChild(child);
