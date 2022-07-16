@@ -30,7 +30,8 @@ a {
 }
 
 .superior {
-    background-color: blue; /*cambiar background por imagen*/
+    background-image: url(../img/background.png);
+    background-position: center;
     height: 35.4%; /* golden ratio con container_cartas*/
 }
 
@@ -49,13 +50,12 @@ a {
     height: 100%;
     background-color: white;
     border-radius: 45px;
-    box-shadow: -3px 8px 18px -11px rgba(0,0,0,0.5);
+    box-shadow: -3px 8px 18px -11px rgba(0,0,0,0.645);
     transition: .04s ease-out;
 }
 
 .texto_carta {
     padding: 20px;
-
 }
 
 
