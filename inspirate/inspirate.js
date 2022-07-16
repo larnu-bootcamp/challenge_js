@@ -1,3 +1,5 @@
+// data es un arreglo del archivo data.js el cual es incorporado en el codigo html previo a este
+
 // Tarjetas para Links Externos
 // permite crear html
 class LinkTarjeta {
@@ -10,53 +12,26 @@ class LinkTarjeta {
 
     generarHtml(){
         // Genera codigo HTML dentro de un div con clase tarjeta y un id llamado como this.titulo
-        return `<div class="carta">
-        <div class="imagen_carta">
-
-        </
+        return `<a href="${this.link}">
+        <div class="carta">
+        <img class="imagen_carta" src="img/${this.img}">
         <div class="texto_carta">
             <h3>${this.titulo}</h3>
             <p>${this.texto}</p>
         </div>
-        </div>`;
+        </div>
+        </a>`;
     }
 
 }
 
-var tarjeta = new LinkTarjeta("a","b","c","d")
-var tarjeta2 = new LinkTarjeta("a","b","titulo","lorem ipsum dolor sit amet, consectetur adipiscing elit")
-
-
-// Agregar al div contenedor_tarjetas
-/*
-let div_padre = document.getElementById("div_padre");
-let child_p_elem = document.createElement("p")
-let child_p_elem2 = document.createElement("p")
-let child_p_elem3 = document.createElement("p")
-let child_p_elem4 = document.createElement("p")
-
-//div_padre.appendChild(tarjeta.generarHtml());
-//let tarjeta = document.createElement("div")
-child_p_elem.innerHTML = tarjeta.generarHtml()
-child_p_elem2.innerHTML = tarjeta.generarHtml()
-child_p_elem3.innerHTML = tarjeta.generarHtml()
-child_p_elem4.innerHTML = tarjeta.generarHtml()
-div_padre.appendChild(child_p_elem);
-div_padre.appendChild(child_p_elem2);
-div_padre.appendChild(child_p_elem3);
-*/
+var tarjeta = new LinkTarjeta("logo.png","logo.png","titulo","lorem ipsum dolor sit amet, consectetur adipiscing elit")
 
 // Loop para crear varias tarjetas a partir de Data
 let div_padre = document.getElementById("div_padre");
-
-for (i=1; i <= 5; i++) {
-    //var newP = document.createElement("p");
-    //var pText = document.createTextNode("sample paragraph");
-    //newP.appendChild(pText);
+for (i=1; i <= 8; i++) {
     var child = document.createElement("div")    
     child.innerHTML = tarjeta.generarHtml()
 
     div_padre.appendChild(child);
-    //var contentSection = document.getElementById("content");
-    //document.body.insertBefore(newP, contentSection);
 }
