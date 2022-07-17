@@ -102,6 +102,9 @@
   display: flex;
   flex-direction: column;
 }
+.wrapper .container__main .container__Course .container__filter{
+  margin-bottom: 20px;
+}
 .wrapper .container__main .left {
   width: 100%;
   overflow-y: auto;
