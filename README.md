@@ -15,8 +15,9 @@ Dado que tengamos $a+b=1$ osea el 100%,
 $$a = 1.68 b$$
 $$\frac{a+b}{a}=\frac{1}{1.68 \, b}=1.68$$
 $$\rightarrow b = \frac{1}{(1.68)^2} =0.354$$ 
-mientras que usando la ecuacion del 100% resolvemos para a
+mientras que usando la ecuacion del $100\%$ resolvemos para a
 $$a = 1-b=0.646$$
 
 Traduciendo a porcentajes:
-$$\array{a= 64.6\% \\ b= 35.4\% }$$
+$$a= 64.6\%$$
+$$b= 35.4\%$$
