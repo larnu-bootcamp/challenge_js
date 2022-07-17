@@ -4,16 +4,16 @@ console.log(data);
 // Tarjetas para Links Externos
 // permite crear html
 class LinkTarjeta {
-    constructor(link, img, titulo, texto) {
-        this.link = link;
-        this.img = img;
-        this.titulo = titulo;
-        this.texto = texto;
-    }
+  constructor(link, img, titulo, texto) {
+    this.link = link;
+    this.img = img;
+    this.titulo = titulo;
+    this.texto = texto;
+  }
 
-    generarHtml(){
-        // Genera codigo HTML dentro de un div con clase tarjeta y un id llamado como this.titulo
-        return `<a href="${this.link}">
+  generarHtml() {
+    // Genera codigo HTML dentro de un div con clase tarjeta y un id llamado como this.titulo
+    return `<a href="${this.link}">
         <div class="carta">
         <img class="imagen_carta" src="img/${this.img}">
         <div class="texto_carta">
@@ -22,23 +22,23 @@ class LinkTarjeta {
         </div>
         </div>
         </a>`;
-    }
+  }
 
 }
 
-var tarjeta = new LinkTarjeta("logo.png","logo.png","titulo","lorem ipsum dolor sit amet, consectetur adipiscing elit")
+var tarjeta = new LinkTarjeta("logo.png", "logo.png", "titulo", "lorem ipsum dolor sit amet, consectetur adipiscing elit")
 
 // camtodad de datos
 largo_data = data.length
 
 // Loop para crear varias tarjetas a partir de Data
 let div_padre = document.getElementById("div_padre");
-for (i=1; i <= largo_data; i++) {
-    var child = document.createElement("div");
-    //toma un dato del arreglo data y extrae la informacion para crear el html de una carta
-    var dato = data[i];
-    var tarjeta = new LinkTarjeta( dato.link, dato.img, dato.titulo, dato.texto)
-    child.innerHTML = tarjeta.generarHtml()
+for (i = 1; i <= largo_data; i++) {
+  var child = document.createElement("div");
+  //toma un dato del arreglo data y extrae la informacion para crear el html de una carta
+  var dato = data[i];
+  var tarjeta = new LinkTarjeta(dato.link, dato.img, dato.titulo, dato.texto)
+  child.innerHTML = tarjeta.generarHtml()
 
-    div_padre.appendChild(child);
+  div_padre.appendChild(child);
 }
