@@ -12,7 +12,7 @@ $$ \frac{a}{b} = 1.68$$
 $$ \frac{a+b}{a} = 1.68$$
 
 Dado que tengamos $a+b=1$ osea el 100%,
-$$ a = 1.68 b $$
+$$a = 1.68 b$$
 $$ \frac{a+b}{a}=\frac{1}{1.68 \, b}=1.68$$
 $$ \rightarrow b = \frac{1}{(1.68)^2} =0.354$$ 
 mientras que usando la ecuacion del 100% resolvemos para a
