@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  --white-100: rgb(252, 252, 252);
+  --white-150: rgb(242, 242, 247);
+  --primary: rgb(109, 40, 217);
+  --base-content: rgb(46, 44, 82);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.5rem; /* 1.6px */
+  color: var(--base-content);
+  height: 100vh;
+  font-weight: 400;
+  background-color: var(--white-150);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--white-100);
+  border-radius: 2rem;
+  padding: 4rem;
+  width: 48rem;
+  min-height: 30rem;
+  box-shadow: 0px 0px 12px 2px rgba(46, 44, 82, 0.15);
+}
+
+.avatar-container {
+  width: 12rem;
+  height: 12rem;
+}
+
+.avatar {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.card__head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.heading {
+  letter-spacing: -0.4px;
+  font-size: 1.3rem;
+}
+
+.heading > * {
+  display: block;
+}
+
+.heading--main {
+  font-weight: 400;
+  font-size: 2.6rem;
+}
+
+.heading--subtitle {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.skills-container {
+  width: 28rem;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+article p {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+.btn {
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  color: var(--white-150);
+  padding: 0.5rem 1.2rem;
+  border-radius: 25rem;
+  box-shadow: 0px 0px 8px 1px rgba(46, 44, 82, 0.35);
+  background-color: var(--primary);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn:hover {
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0px 0px 16px 1px rgba(46, 44, 82, 0.35);
+}
+
+.btn:active {
+  transform: scale(1) translateY(1px);
+  box-shadow: 0px 0px 4px 1px rgba(46, 44, 82, 0.35);
+}
+
+.btn__icon {
+  font-size: 1.8rem;
+}
+
+.buttons-box {
+  gap: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
